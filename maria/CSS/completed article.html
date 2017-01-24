@@ -4,13 +4,22 @@
     <meta charset="utf-8">
     <title>전자신문</title>
     <style type="text/css">
+
+      body{
+      background: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png);
+         }
       .wrap{
         border:1px #F00 solid;
         width:900px;
         height:540px;
         margin: 0 auto;
-      }
+        padding:0 20 33px;
+        background-image:url(http://static.naver.net/newsstand/img/20121231/bg_panel.png)
+          }
       /*img{vertical-align: top}*/
+
+      header{padding:10px;}
+
       ul{margin:0; padding:0; list-style:none;}
       .pink{color:red;}
       header{outline:1px #F00 solid; margin:0 30px 20px; height:91px;}
@@ -28,7 +37,7 @@
       .left-contents .first-news .thumb img{width:100%; height:100%;}
       .left-contents .first-news .list{margin-left:175px;}
       .left-contents .first-news .list ul a{text-decoration:none; color:#000;}
-      .left-contents .secount .thumb_neil{outline:1px #F00 solid; width:162px; background-color:#CCC; float:left;}
+      .left-contents .secount .thumb_neil{outline:1px #F00 solid; width:162px; float:left;}
       .left-contents .secount .thumb_neil li div{width:125px; height:78px; outline:1px #F00 solid; margin: 0 auto;}
       .left-contents .secount .thumb_neil li span{font-size:11px; margin: 5px 15px; border:1px #F00 solid; display:block;}
       .left-contents .secount .thumb_neil li div img{width:100%; height:100%;}
@@ -36,9 +45,15 @@
       .left-contents .secount .list li{height:26px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 
 
-      .right-contents{outline:1px #F00 solid; height:100%; margin-left:533px; background-color:#CCC;}
+      .right-contents{outline:1px #F00 solid; height:100%; margin-left:533px; list-style: none;}
+      .right-contents .grid_list ul{outline:1px #F00 solid; width: 110%;}
+      .right-contents .grid_list li{width:146px; height: 126px; outline:1px #F00 solid; font-size: 11px; float: left; margin-right: 10px; margin-bottom: 10px;}
+      .right-contents .grid_list li img{width: 146px;}
 
-
+      .right-contents .issue ul{padding:12px 16px;}
+      .right-contents .issue{outline: 1px #F00 solid; width: 100%; font-size: 12px; float: left; list-style: none;}
+      .right-contents .issue li {list-style: disc; list-style-position:inside; display: list-item;}
+      .right-contents .issue h2{background-color: #D87; margin:0;}
     </style>
   </head>
 
@@ -111,7 +126,51 @@
               </div>
            </article>
          </div>
+
+
          <div class="right-contents">
+          <div class="issue">
+              <div><h2>이슈분석</h2></div>
+                <div class="sec">
+                 <ul>
+                  <li>18년만의 전산분리, 농협 의왕 IT 통합센터 현장들</li>
+                  <li>삼성전자, 노트 7 사태 재발 막는다...품질강화 방</li>
+                  <li>결국은 배터리 문제... 삼성, 왜 미리 잡지 못했나</li>
+                 </ul>
+                </div>
+
+          </div>
+
+           <div class="grid_list">
+            <ul>
+              <li>
+               <div><img src="http://static.naver.net/newsstand/2017/0124/etnews/091348/004.jpg" alt=""></div>
+               <span>올해 말 하늘 나는 자동차 시제품 나온다</span>
+              </li>
+              <li>
+               <div><img src="http://static.naver.net/newsstand/2017/0124/etnews/091348/006.jpg" alt=""></div>
+               <span>남극이 UFO 착륙장?.. 거대 계단 발견</span>
+              </li>
+              <li>
+               <div><img <img src="http://static.naver.net/newsstand/2017/0124/etnews/091348/005.jpg" alt=""></div>
+               <span>3000년전 다윗왕 시대 유적 발견</span>
+              </li>
+              <li>
+               <div><img <img src="http://static.naver.net/newsstand/2017/0124/etnews/091348/007.jpg" alt=""></div>
+               <span>NASA가 외계인을 숨겼다고?.. 우주 섬광 놓고 논란</span>
+              </li>
+            </ul>
+         </div>
+       </div>
+
+
+    </section>
+
+
+
+
+
+
 
          </div>
 
