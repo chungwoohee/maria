@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://newsstand.naver.com/include/page/138.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="author" content="이재현;ndbnet@gmail.com">
+<title>디지털데일리 뉴스스탠드</title>
+<style>
+/* Reset */
+html,body{margin:0;padding:0;height:100%;}
+body{font-family:"돋움", Dotum, "굴림", Gulim, Arial, AppleGothic, sans-serif; font-size:12px;}
+div,ul,ol,li,dl,dt,dd,p,input,textarea,select,h1,h2,h3,h4,em,address,fieldset,form,iframe,object,img,img a {border:none; margin:0; padding:0;}
+li, dd {list-style:none;}
+table{border-collapse:collapse; border-spacing:0;}
+em,address,cite{font-style:normal}
+a {text-decoration:none; color:#333}
+a:hover { color:#266dbb; }
+
+/* Common */
+.clfix {display:block}
+.clfix:after {content:""; display:block; height:0px; clear:both; visibility:hidden; }
+.clear {clear:both; overflow:hidden;}
+.fl {float:left !important;}
+.fr {float:right !important;}
+.txtL {text-align:left !important;}
+.txtC {text-align:center !important;}
+.txtR {text-align:right !important;}
+.verT {vertical-align:top !important;}
+.verM {vertical-align:middle !important;}
+.verB {vertical-align:bottom !important;}
+
+.mt0 { margin-top:0px !important;}
+.mt5 { margin-top:5px !important;}
+.mt10 { margin-top:10px !important;}
+.mt15 { margin-top:15px !important;}
+.mt20 { margin-top:20px !important;}
+.mt30 { margin-top:30px !important;}
+.mt40 { margin-top:40px !important;}
+.mb0 { margin-bottom:0 !important;} 
+.mb5 { margin-bottom:5px !important;}
+.mb10 { margin-bottom:10px !important;}
+.mb15 { margin-bottom:15px !important;}
+.mr5 { margin-right:5px !important;}
+.mr10 { margin-right:10px !important;}
+.mr15 { margin-right:15px !important;}
+.mr20 { margin-right:20px !important;}
+.ml5 { margin-left:5px !important;}
+.ml10 { margin-left:10px !important;}
+.ml15 { margin-left:15px !important;}
+.ml20 { margin-left:20px !important;}
+/* padding도 필요하다면 추가 */
+
+
+/* 레이아웃 */
+#wrap { width:840px; height:380px}
+#side { width:210px}
+#content { width:620px}
+
+/* 각 항목별 스타일 */
+#headline { border:0px solid #d6d6d6; height:148px; position:relative; }
+/* 전무님께서 1안대로 변경하라고 메일로 말씀하심 */
+#headline h1 { font-size:24px; margin-top:0px; letter-spacing:-2px; font-weight:bold; }
+#headline h1 a { color:#000; }
+#headline h1 a:hover { color:#266dbb; }
+#headline span { font-size:12px; color:#999; line-height:17px; }
+#rel_headline { font-size:12px; line-height:21px; }
+#rel_headline li a:hover { text-decoration:underline; }
+.headline_picture { width:200px; height:115px; }
+.headline_picture a img { position:absolute; top:27px;left:-1px; border:1px solid #eee; }
+
+#main_content { width:420px; }
+#sub_content { width:190px; border:0px solid #ff8000; background:#ffefdf; height:212px;}
+.sub_box h3 { border-bottom:0px solid #d6d6d6; height:14px; font-size:0; padding:0; margin:0; }
+.sub_box h3 span { display:none; }
+.sub_box_content { height:54px; position:relative; }
+.sub_box_content ul { position:absolute; top:5px; left:5px; font-family:"굴림", Gulim, Arial, sans-serif;font-size:12px; line-height:18px; }
+.sub_box_content ul li { margin:2px 0 2px 6px; }
+.sub_box_content ul li a:hover { text-decoration:underline; }
+.h3_01 { background:url("http://static.naver.net/newsstand/2017/0124/ddaily/101047/009.png") no-repeat 6px 3px; }
+.h3_02 { background:url("http://static.naver.net/newsstand/2017/0124/ddaily/101047/010.png") no-repeat 6px 3px; border-top:5px solid #fff; }
+.h3_03 { background:url("http://static.naver.net/newsstand/2017/0124/ddaily/101047/011.png") no-repeat 6px 3px; border-top:5px solid #fff; }
+
+#middletop { border-top:1px solid #ffca95; padding-top:8px; height:58px; }
+.mtop1 { width:210px; position:relative; }
+.mtop2 { width:209px; position:relative; }
+.mtop_txt { font-family:"굴림", Gulim, Arial, sans-serif;font-size:12px; line-height:16px; font-weight:bold; }
+.mtop_txt a:hover { text-decoration:underline; }
+.mtop_picture { width:60px; height:60px; }
+.mtop_picture a img { position:absolute; top:-1px;left:-1px; border:1px solid #eee; width:60px; height:60px; }
+
+
+
+
+#latest { border-top:1px solid #ff8000; height:143px }
+#latest ul { font-family:"굴림", Gulim, Arial, sans-serif;font-size:14px; font-weight:bold; }
+#latest ul li { margin-bottom:8px; }
+#latest ul li a { color:#333; letter-spacing:-1px; line-height:20px; }
+#latest ul li a:hover { color:#266dbb; }
+
+.pic_news1 { border:1px solid #d6d6d6; height:113px; position:relative; }
+.news_picture1 { position:absolute; top:-1px;left:-1px; width:210px; height:115px; border:1px solid #eee; } 
+.news_box {	width:210px; height:35px; position:absolute; bottom:-2px; left:-1px;  background:url("http://static.naver.net/newsstand/2017/0124/ddaily/101047/012.png"); margin:0; padding:0; }
+.news_text { color:#fff; margin:2px; padding:0; }
+.news_text a { color:#fff; }
+
+
+.pic_news2 { border:0px solid #d6d6d6; height:58px; position:relative; }
+.pic_news2_picture { position:absolute; top:-1px;left:-1px; width:78px; height:58px; border:1px solid #eee; }
+.pic_news2_text { position:absolute; width:126px; top:0px; left:83px; font-family:"굴림", Gulim, Arial, sans-serif;font-size:12px; margin-top:5px; line-height:17px;}
+.pic_news2_text a:hover { text-decoration:underline; }
+.column { width:100px; }
+.column h3 { border-bottom:1px solid #d6d6d6; height:25px; font-size:0; padding:0; margin:0; }
+.column h3 span { display:none; }
+.h3_col1 { background:url("http://static.naver.net/newsstand/2017/0124/ddaily/101047/013.png") no-repeat; }
+.h3_col2 { background:url("http://static.naver.net/newsstand/2017/0124/ddaily/101047/014.png") no-repeat; }
+.column_box { border-left:1px solid #d6d6d6; border-bottom:1px solid #d6d6d6; border-right:1px solid #d6d6d6; height:88px; position:relative; }
+.column_picture { position:absolute; top:5px;left:5px;width:45px; height:45px; }
+.column_name { position:absolute; top:10px; left:55px; width:48px; }
+.column_text { position:absolute; top:55px; left:4px; }
+</style>
+<script type="text/javascript">document.domain = 'naver.com';</script></head>
+<body>
+<div id="wrap" class="clfix">
+	<!-- 컨텐츠 영역 -->
+	<div id="content" class="fl">
+		<!-- 해드라인 -->
+		<div id="headline" class="clfix mb10">
+			<h1><a href="http://www.ddaily.co.kr/news/article.html?no=152118" target="_blank">삼성전자, 갤노트7 충격 탈출…작년 4분기 영업익 9.22…</a></h1>
+			<div class="headline_picture fl mr10"><a href="http://www.ddaily.co.kr/news/article.html?no=152118" target="_blank"><img src="./001(2).jpg" alt="삼성전자, 갤노트7 충격 탈출…작년 4분기 영업익 9.22…" width="200" height="115"></a></div>
+			<div class="mt5 mr5">
+				<span>- - 매출액 53조3300억원…2017년 9.3조원 자사주 매입 소각[디지털데일리 윤상호기자] 삼성전자가 한 분기만에 ‘갤럭시노트7’ 출격…</span>
+				<ul id="rel_headline" class="mt15"><li><a href="http://www.ddaily.co.kr/news/article.html?no=152105" target="_blank">- 지상파 “UHD 방송 9월 연기”…방통위, 이번 주 논의 시작</a></li>
+							<li><a href="http://www.ddaily.co.kr/news/article.html?no=152097" target="_blank">- ‘포켓몬고’, 국내 시장 파급력은 얼마나…공식 발표에 쏠린 시선</a></li><li><a href="http://www.ddaily.co.kr/news/article.html?no=152095" target="_blank">- 영그는 SK그룹의 반도체 수직계열화…선제적 대응 차원</a></li></ul>
+			</div>
+		</div>
+
+
+			<div id="main_content" class="fl clfix">
+				<!-- 중탑 -->
+				<div id="middletop" class="clfix mb10">
+					<div class="mtop1 fl">
+						<div class="mtop_picture fl mr10"><a href="http://www.ddaily.co.kr/news/article.html?no=152093" target="_blank"><img src="./002(1).jpg" alt="인터넷 사기 더욱 기승…안전거래 ‘이지크로’ 이용하면 걱…" width="60" height="60"></a></div>
+						<p class="mtop_txt mt5 mr5"><a href="http://www.ddaily.co.kr/news/article.html?no=152093" target="_blank"><strong>인터넷 사기 더욱 기승…안전거래 ‘이지크로’ 이용하면 걱…</strong></a></p>
+					</div>
+					<div class="mtop2 fr">
+						<div class="mtop_picture fl mr10"><a href="http://www.ddaily.co.kr/news/article.html?no=152117" target="_blank"><img src="./003(2).jpg" alt="V자 반등한 LG디스플레이…견조한 LCD 경쟁력 확인(종합…" width="60" height="60"></a></div>
+						<p class="mtop_txt mt5 mr5"><a href="http://www.ddaily.co.kr/news/article.html?no=152117" target="_blank"><strong>V자 반등한 LG디스플레이…견조한 LCD 경쟁력 확인(종합…</strong></a></p>
+					</div>
+				</div>
+
+				<!-- 주요뉴스 -->
+				<div id="latest">
+					<ul class="mt10">
+						<li><a href="http://www.ddaily.co.kr/news/article.html?no=152095" target="_blank">영그는 SK그룹의 반도체 수직계열화…선제적 대응 차원</a></li>
+						<li><a href="http://www.ddaily.co.kr/news/article.html?no=152098" target="_blank">인터넷전문은행 K뱅크 2월6일, 역사적 가동…숨죽인 마지막…</a></li>
+						<li><a href="http://www.ddaily.co.kr/news/article.html?no=152105" target="_blank">지상파 “UHD 방송 9월 연기”…방통위, 이번 주 논의 시작</a></li>
+						<li><a href="http://www.ddaily.co.kr/news/article.html?no=152097" target="_blank">‘포켓몬고’, 국내 시장 파급력은 얼마나…공식 발표에 쏠린…</a></li>
+						<li><a href="http://www.ddaily.co.kr/news/article.html?no=152083" target="_blank">‘기승전-배터리’…갤노트7이 남긴 기술의 한계</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="sub_content" class="fr">
+				<!-- 모바일/엔터프라이즈/스페샬 -->
+				<div class="sub_box">
+					<h3 class="h3_01"><span>모바일</span></h3>
+					<div class="sub_box_content">
+						<ul>
+							<li><a href="http://www.ddaily.co.kr/news/article.html?no=151774" target="_blank">최성준 방통위원장 “설연휴…</a></li>
+							<li><a href="http://www.ddaily.co.kr/news/article.html?no=151771" target="_blank">LGU+도 참여…방송통신 동…</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub_box">
+					<h3 class="h3_02"><span>엔터프라이즈</span></h3>
+					<div class="sub_box_content">
+						<ul>
+							<li><a href="http://www.ddaily.co.kr/news/article.html?no=151781" target="_blank">넷앱,  “3분기 전세계 스토…</a></li>
+							<li><a href="http://www.ddaily.co.kr/news/article.html?no=151772" target="_blank">하루 판매량 254만건 불티……</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub_box">
+					<h3 class="h3_03"><span>스페샬</span></h3>
+					<div class="sub_box_content">
+						<ul>
+							<li><a href="http://www.ddaily.co.kr/news/article.html?no=151745" target="_blank">우체국금융 ITO 사업자 결…</a></li>
+							<li><a href="http://www.ddaily.co.kr/news/article.html?no=151748" target="_blank">제4이동통신 시장진입이 쉬…</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<!-- 사이드 영역 -->
+	<div id="side" class="fr">
+		<div class="pic_news1 mb10">
+			<a href="http://www.ddaily.co.kr/news/article.html?no=151765" target="_blank"><img class="news_picture1" src="./004(2).jpg" alt="네이버 TV캐스트, ‘네이버TV’로 새 단장" width="210" height="115"></a>
+			<div class="news_box">
+				<div class="news_text"><a href="http://www.ddaily.co.kr/news/article.html?no=151765" target="_blank">네이버 TV캐스트, ‘네이버TV’로 새 단장</a></div>
+			</div>
+		</div>
+		
+
+		<div class="pic_news2 clfix mb10">
+			<a href="http://www.ddaily.co.kr/news/article.html?no=151756" target="_blank"><img src="./005(2).jpg" class="pic_news2_picture" alt="‘초경량 노트북=그램’…LG전자, 기네스북 등재" width="78" height="58"></a>
+			<div class="pic_news2_text"><a href="http://www.ddaily.co.kr/news/article.html?no=151756" target="_blank">‘초경량 노트북=그램’…LG전자, 기네스북 등재</a></div>
+		</div>
+
+		<div class="pic_news2 clfix mb10">
+			<a href="http://www.ddaily.co.kr/news/article.html?no=151755" target="_blank"><img src="./006(2).jpg" class="pic_news2_picture" alt="삼성전자, 게이밍 노트북 ‘오디세이’ 첫 선" width="78" height="58"></a>
+			<div class="pic_news2_text"><a href="http://www.ddaily.co.kr/news/article.html?no=151755" target="_blank">삼성전자, 게이밍 노트북 ‘오디세이’ 첫 선</a></div>
+		</div>
+
+		<div id="column" class="clfix">
+			<div class="column fl">
+				<h3 class="h3_col1"><span>컬럼</span></h3>
+				<div class="column_box">
+					<a href="http://www.ddaily.co.kr/news/article.html?no=152066" target="_blank"><img src="./007(2).jpg" class="column_picture" alt="작성자:이상일" width="45" height="45"></a>
+					<div class="column_text"><a href="http://www.ddaily.co.kr/news/article.html?no=152066" target="_blank">정보기관과 IT기업간 협업…</a></div>
+					<div class="column_name"><a href="http://www.ddaily.co.kr/news/article.html?no=152066" target="_blank">이상일</a></div>
+				</div>
+			</div>
+
+			<div class="column fr">
+				<h3 class="h3_col2"><span>피플</span></h3>
+				<div class="column_box">
+					<a href="http://www.ddaily.co.kr/news/article.html?no=152070" target="_blank"><img src="./008(1).jpg" class="column_picture" alt="피플뉴스 사진" width="45" height="45"></a>
+					<div class="column_text"><a href="http://www.ddaily.co.kr/news/article.html?no=152070" target="_blank">삼성전자 고동진 사장, “갤…</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body></html>

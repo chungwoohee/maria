@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0048)http://newsstand.naver.com/include/page/031.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="viewport" content="width=840">
+<title>네이버뉴스스탠드:아이뉴스24</title>
+<style type="text/css">
+/* INews24 Dev Team LYH 130628 */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textare
+a,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'굴림',gulim,Sans-Serif,Helvetica,sansserif;font-size:12px;color:#333}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+
+.face_nanum{
+	font-family:'나눔고딕','NanumGothic','맑은고딕' , 'MalgunGothic';
+}
+.face_dotum{
+	font-family:'돋움',Dotum,'돋움 보통','굴림',gulim,Sans-Serif;
+}
+.face_gulim{
+	font-family:'굴림',gulim,sans-serif;
+}
+a{color: inherit; text-decoration:none}
+a:hover,a:active,a:focus{color:#0a46a5; text-decoration:none}
+a.fc_blue{color:#0a46a5}
+a.fc_pink{color:#ed5a9e}
+.blind,#u_skip{visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+
+
+/* Layout */
+#wrap{width:840px;margin:0 auto}
+#header{width:840px}
+#container,#content{position:relative;width:840px}
+#container:after{display:block;clear:both;content:''}
+.section_center{position:relative;float:left;width:400px;margin-top:9px}
+#footer{width:840px}
+.section_left{float:left;width:140px;margin:4px 15px 0 0}
+.section_right{position:relative;float:right;width:270px}
+
+.img_top3_v1{position:relative;width:140px;height:104px;margin-bottom:24px}
+.img_top3_v2{position:relative;width:140px;height:127px}
+.h_thumtxt,.h_thumtxt_v2{display:block;margin-top:5px;font-size:12px;font-weight:normal;letter-spacing:-1px;text-align:center;line-height:17px}
+.h_thumtxt_v2{width:130px}
+.h_topnews1{height:57px;font-size:25px;font-weight:bold;font-family:'돋움',dotum,sans-serif;color:#00007c;letter-spacing:-4px}
+.h_topnews1 strong{color:#00007c}
+.h_topnews1 span{display:block;margin-top:6px;margin-left:10px;font-size:13px;font-family:'굴림',gulim,sans-serif;color:#464646;letter-spacing:0}
+.h_relnews{margin-left:15px;height:37px}
+.h_relnews li{padding-left:10px;background:url(http://static.naver.net/newsstand/2017/0124/inews/095246/009.jpg) no-repeat 0 2px;line-height:22px}
+.h_list_topNews{margin:24px 0 12px 15px}
+.h_list_topNews_v2{margin:0 0 0 15px}
+.h_list_topNews h3,
+.h_list_topNews_v2 h3{font-size:14px;font-weight:bold;line-height:26px}
+.section_center h5{margin:20px 0 0 15px;font-weight:bold;font-size:12px}
+.h_topjoynews li{display:inline;float:left;width:130px;height:189px}
+.h_topjoynews li.first{margin-right:10px}
+.section_right h4{font-size:13px;font-weight:normal;line-height:23px}
+h5 span{color:#f50}
+h6{display:block;margin-top:0;padding:0;font-size:12px;font-weight:normal}
+.h_relnews li,
+.h_list_topNews li h3,
+.h_list_topNews_v2 li h3,
+h5,
+h2 strong{overflow:hidden;width:386px;text-overflow:ellipsis;white-space:nowrap}
+h4{float:right;clear:both;overflow:hidden;width:264px;text-overflow:ellipsis;white-space:nowrap}
+h6 span{color:#707070}
+.box_book{position:absolute;top:342px;left:0;margin:0;padding:0}
+
+.joynews_list{position:absolute;float:left;top:189px;left:0;margin:0 11px 0 0;padding:0}
+
+.img_book{float:left;top:0;left:0;width:38px;height:38px}
+.h_book{float:left;width:215px;height:34px;margin:3px 0 0 8px;line-height:17px}
+.special{color:#606060}
+.ellipsis_s{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+
+}
+.ellipsis_m{
+	display:block;
+	display:-webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	overflow:hidden;
+	text-overflow:ellipsis
+}
+</style>
+<script type="text/javascript">document.domain = 'naver.com';</script></head>
+<body style="">
+<div id="u_skip">
+
+<a href="http://www.inews24.com/" target="_blank" title="새창:아이뉴스24"><span>아이뉴스 바로가기</span></a>
+</div>
+<div id="wrap">
+<!-- header -->
+<div id="header">
+	<div class="gnb">		
+	</div>
+	<div class="sta">
+	</div>
+	<div class="lnb">
+		<h1 class="blind">아이뉴스24 네이버 뉴스스탠드</h1>
+	</div>
+</div>
+<!-- //header -->
+<!-- Container -->
+<div container="" id="container" style="">
+
+	<div section-left="" style=" float:left; width:510px; margin-right:35px;">
+		
+		<div box-top="" style="margin-bottom:20px">
+			<a href="http://www.inews24.com/php/news_view.php?g_serial=1003261&amp;g_menu=020100" target="_blank">
+			<div news-title="" style="height:62px; ">
+				<p class="face_dotum" style="font-size:24px; color:#003399; line-height:35px; font-weight:bold; padding-left:4px;">'뉴 ICT 거버넌스' 급물살…방향은 '극과극'</p>
+				<p class="face_dotum" style="font-size:14px; color:#666666; padding-left:5px; font-weight:bold; line-height:20px;">차기 정부 개편안, 2월 이후 본격 공론화…미래부 '촉각'</p>
+			</div>
+			</a>
+			<div news-box="" style="height:110px; ">
+				<a href="http://www.inews24.com/php/news_view.php?g_serial=1003261&amp;g_menu=020100" target="_blank">
+				<div image="" style="float:left;height:110px; width:200px; margin-right:10px;">
+					<img alt="" src="./001.jpg" style="width:100%; height:100%;">
+				</div>
+				</a>
+				<div news-relation="" style="float:left; height:110px; width:300px;">
+					<div relation="" style="height:75px;">
+												<div class="ellipsis_s" style="line-height:23px; color:black; font-size:13px; height:23px;">
+							<img alt="뉴스 이미지" src="./002.png" style="margin-right:4px; vertical-align:3px;"><a href="http://www.inews24.com/php/news_view.php?g_serial=999064&amp;g_menu=020100" target="_blank">최양희 미래부 장관 "잦은 정부 조직 개편은 낭비" 쓴소리</a>
+						</div>
+												<div class="ellipsis_s" style="line-height:23px; color:black; font-size:13px; height:23px;">
+							<img alt="뉴스 이미지" src="./002.png" style="margin-right:4px; vertical-align:3px;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1000366&amp;g_menu=020100" target="_blank">최양희 장관 "차기 정부서도 미래부 유지돼야"</a>
+						</div>
+												<div class="ellipsis_s" style="line-height:23px; color:black; font-size:13px; height:23px;">
+							<img alt="뉴스 이미지" src="./002.png" style="margin-right:4px; vertical-align:3px;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1001655&amp;g_menu=020100" target="_blank">미래부 운명은? 해체 vs ICT 전담 '갑론을박'</a>
+						</div>
+											</div>
+					<div column="" class="ellipsis_s" style="height:35px; background-color:#EDEDED; font-size:13px; line-height:35px; padding-left:8px; padding-right:8px;">
+						<a href="http://www.inews24.com/php/news_view.php?g_serial=1003280&amp;g_menu=022200" target="_blank">
+						<span style="color:#ff6633; font-weight:bold;">[칼럼]</span>[이영은] 국산차 '한국인CEO' 3인에 거는 기대						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div box-bottom="" style="">
+			<div bottom-left="" style="float:left; width:295px; margin-right:15px; ">
+			
+								<div class="ellipsis_s" style="line-height:22px; color:black; font-size:13px; height:22px; font-weight:bold;"><img alt="뉴스 이미지" src="./003.jpg" style="margin-right:5px; vertical-align:3px;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003188&amp;g_menu=020800" target="_blank">삼성전자 "갤노트7 발화, 배터리 문제…안전 강화"</a></div>
+								<div class="ellipsis_s" style="line-height:22px; color:black; font-size:13px; height:22px; font-weight:normal;"><img alt="뉴스 이미지" src="./003.jpg" style="margin-right:5px; vertical-align:3px;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003278&amp;g_menu=020810" target="_blank">"올해 디스플레이 시장 수요 확대, TV용 패널이 견인"</a></div>
+								<div class="ellipsis_s" style="line-height:22px; color:black; font-size:13px; height:22px; font-weight:normal;"><img alt="뉴스 이미지" src="./003.jpg" style="margin-right:5px; vertical-align:3px;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003093&amp;g_menu=020200" target="_blank">KISA "대선정국 틈타 대규모 디도스·해킹 우려"</a></div>
+								<div class="ellipsis_s" style="line-height:22px; color:black; font-size:13px; height:22px; font-weight:normal;"><img alt="뉴스 이미지" src="./003.jpg" style="margin-right:5px; vertical-align:3px;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003255&amp;g_menu=020200" target="_blank">구글 지메일 까지…날로 정교해지는 '피싱'</a></div>
+								<div margin="" style="height:12px;"></div>
+				
+								<div class="ellipsis_s" style="line-height:22px; color:black; font-size:13px; height:22px; font-weight:bold; "><img alt="뉴스 이미지" src="./003.jpg" style="margin-right:5px; vertical-align:3px;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003248&amp;g_menu=022500" target="_blank">신년세일 百, '한파'에 웃고 '영란법'에 울었다</a></div>
+								<div class="ellipsis_s" style="line-height:22px; color:black; font-size:13px; height:22px; font-weight:normal; "><img alt="뉴스 이미지" src="./003.jpg" style="margin-right:5px; vertical-align:3px;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003276&amp;g_menu=022100" target="_blank">SK, 'LG실트론' 인수…종합 반도체소재 포트폴리오 구축</a></div>
+								<div class="ellipsis_s" style="line-height:22px; color:black; font-size:13px; height:22px; font-weight:normal; "><img alt="뉴스 이미지" src="./003.jpg" style="margin-right:5px; vertical-align:3px;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003195&amp;g_menu=024300" target="_blank">삼양식품, '핵불닭볶음면'으로 매운맛 돌풍 잇는다</a></div>
+								<div class="ellipsis_s" style="line-height:22px; color:black; font-size:13px; height:22px; font-weight:normal; "><img alt="뉴스 이미지" src="./003.jpg" style="margin-right:5px; vertical-align:3px;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003244&amp;g_menu=024300" target="_blank">무허가 시설 제조 원료 담은  '홍삼' 회수 조치</a></div>
+				
+			
+			</div>
+			<div bottom-right="" style="float:left; width:200px; color:#666666;">
+				<div news-game="" style="overflow:hidden;">
+					<a href="http://www.inews24.com/php/news_view.php?g_serial=1003335&amp;g_menu=020531" target="_blank">
+					<div game-left="" style="float:left; width:95px; margin-right:10px; ">
+						<div image="" style="height:80px; width:95px;">
+							<img alt="" src="./004.jpg" style="width:100%; height:100%;">
+						</div>
+						<div gisa="" class="ellipsis_m" style="height:30px; font-size:12px; line-height:16px; text-align:center; margin-top:4px;">
+							'다크 소울 3: 더 링드 시티' 3월28일 공개						</div>
+					</div>
+					</a>
+					<a href="http://www.inews24.com/php/news_view.php?g_serial=1003330&amp;g_menu=020531" target="_blank">
+					<div game-right="" style="float:left; width:95px; ">
+						<div image="" style="height:80px; width:95px; ">
+							<img alt="" src="./005.jpg" style="width:100%; height:100%;">
+						</div>
+						<div gisa="" class="ellipsis_m" style="height:30px; font-size:12px; line-height:16px; text-align:center; margin-top:4px;">
+							'나루토: 로드 투 보루토' 발매 기념 이벤트 시작						</div>
+					</div>
+					</a>
+				</div>
+				<div news-card="" class="ellipsis_m" style="height:32px; font-size:13px; line-height:18px; margin-top:12px;">
+					<a href="http://www.inews24.com/php/news_view.php?g_serial=1002290&amp;g_menu=022100" target="_blank">
+					<span style="color:#0066cc; font-weight:bold;">[카드뉴스]</span> 스타트업 리포트-공기의 질을 바꾸는 친환경 전문기업 'Almus E&amp;T'					</a>
+				</div>
+				<div news-special="" style="height:32px;  font-size:13px; line-height:16px; margin-top:12px;">
+					<a href="http://www.inews24.com/php/news_list.php?g_menu=085936" target="_blank">
+					<span style="color:#0066cc; font-weight:bold;">[스페셜]</span> 2017 ICT 기상도					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div section-right="" style=" float:left; width:295px;">
+		<div box-top="" style="height:170px;">
+			<a href="http://www.inews24.com/php/news_view.php?g_serial=1003282&amp;g_menu=024300" target="_blank">
+			<div image-left="" style="float:left; width:140px;margin-right:15px; ">
+				<div image="" style="height:140px; width:140px;">
+					<img alt="" src="./006.jpg" style="width:100%; height:100%;">
+				</div>
+				<div news="" style="height:30px; font-size:12px; line-height:14px; text-align:center; margin-top:5px; font-weight:bold;">
+					"수입란 시대 열렸다"…소비자 반응 '제각각'				</div>
+			</div>
+			</a>
+			<a href="http://www.inews24.com/php/news_view.php?g_serial=1003288&amp;g_menu=020600" target="_blank">
+			<div image-right="" style="float:left; width:140px; ">
+				<div image="" style="height:140px; width:140px; ">
+					<img alt="" src="./007.jpg" style="width:100%; height:100%;">
+				</div>
+				<div news="" style="height:30px;font-size:12px; line-height:14px; text-align:center; margin-top:5px; font-weight:bold;">		
+					애플·폭스콘, 미국공장에 70억달러 투자				</div>
+			</div>
+			</a>
+		</div>
+		<div box-middle="" style=" margin-top:18px;">
+						<div class="ellipsis_s" style="line-height:24px; color:#ec008c; font-size:13px; height:24px; font-weight:normal;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003289&amp;g_menu=050200" target="_blank">반기문, 기존 정당 연대설에 "아직까진 계획없다"</a></div>
+						<div class="ellipsis_s" style="line-height:24px; color:black; font-size:13px; height:24px; font-weight:normal;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003222&amp;g_menu=050200" target="_blank">설 전 여론조사, 문-반 차이 약 10%P로 확대</a></div>
+						<div class="ellipsis_s" style="line-height:24px; color:black; font-size:13px; height:24px; font-weight:normal;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003243&amp;g_menu=050220" target="_blank">문재인 "빅텐트·제3지대, 정권교체 아냐"</a></div>
+						<div class="ellipsis_s" style="line-height:24px; color:black; font-size:13px; height:24px; font-weight:bold;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003194&amp;g_menu=022400" target="_blank">인터넷은행, 3년간 7천억 중금리대출 공급</a></div>
+						<div class="ellipsis_s" style="line-height:24px; color:black; font-size:13px; height:24px; font-weight:normal;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003271&amp;g_menu=022400" target="_blank">우리은행 차기 행장, 이광구·이동건·김승규 '3파전'</a></div>
+						<div class="ellipsis_s" style="line-height:24px; color:black; font-size:13px; height:24px; font-weight:normal;"><a href="http://www.inews24.com/php/news_view.php?g_serial=1003201&amp;g_menu=022300" target="_blank">증권업계, HTS·MTS 민원·분쟁 2년간 3배 껑충</a></div>
+					</div>
+		<div box-bottom="" style="height:38px; margin-top:6px;">
+			<a href="http://www.inews24.com/php/news_view.php?g_serial=1003133&amp;g_menu=023120" target="_blank">
+			<div image="" style="float:left; width:38px; height:38px; line-height:0px;">
+				<img alt="" src="./008.jpg" style="width:38px; height:38px;display:inline-block;">
+			</div>
+			<div news="" style="height:33px; font-size:12px; line-height:16px; padding-top:5px; padding-left:7px; margin-left:38px; color:#666666; ">
+					[책]통합사고·논리 쑥쑥 '플러스 칸트키즈 철학동화'			</div>
+			
+			</a>
+		</div>
+	</div>
+</div>
+<!-- //Container -->
+<!-- footer -->
+<div id="footer">
+</div>
+<!-- //footer -->
+</div>
+
+
+
+</body></html>
