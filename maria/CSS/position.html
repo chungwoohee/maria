@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>position</title>
+
+        <style>
+            .box{
+                border: 1px #F00 solid;
+                background: #F00;
+                left: 100px;
+                right: 100px;
+                bottom: 100px;
+                top: 100px;
+                position:absolute;
+            }
+
+            [class^="box"]{border: 1px #F00 solid; position: absolute; width: 300px; height: 300px;}
+                .box1{background: #F00; left: 100px; top: 100px;}
+                .box2{background: #FF0; left: 150px; top: 150px; z-index: 2;}
+                .box3{background: #F0F; left: 200px; top: 200px; z-index: 1;}
+                .box4{background: #00F; left: 250px; top: 250px;}}
+
+
+
+
+            /*.box1{background: #DD7; left: 0; right: 50%; top: 0; bottom: 50%;}
+            .box2{background: #FD7; left: 50%; right: 0; top: 0; bottom: 50%;}
+            .box3{background: #F07; left: 0; right: 50%; top: 50%; bottom: 0;}
+            .box4{background: #D57; left: 50%; right: 0; top: 50%; bottom: 0;}*/
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+            <!--position
+                    static : 기본
+                    relative : 상대적
+                    absolute : 절대적
+                    fixed : 고정적
+            top
+            right
+            bottom
+            left
+            z-index
+            -->
+
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+
+
+
+
+
+
+    </body>
+</html>
