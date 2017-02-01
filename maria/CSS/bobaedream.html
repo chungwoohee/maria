@@ -3,78 +3,61 @@
     <head>
         <meta charset="utf-8">
         <title>보배드림사이트</title>
+
          <style>
         *{margin:0; padding:0;}
         ul,ol{list-style: none;}
         a{text-decoration:none; color:#000;}
         img{vertical-align: top;}
+        input{outline: 2px rgba(20, 49, 121, 0.82) solid; margin-top: 5px; width: 260px;}
 
-            .wrap{
-                border: 1px #000 solid;
-                width: 990px;
-                height: 1160px;
-            }
-            .high{
-                border: 1px #000 solid;
-                width: 100%;
-                height: 22px;
-            }
-            .left li{
-                float: left;
-                font-size: 12px;
-            }
-            .right li{
-                float: right;
-                font-size: 12px;
-            }
-            .middle_high{
-                border: 1px #000 solid;
-                height: 100px;
-                position: relative;
-            }
-        [class^="box"]{border: 1px #000 solid; position: absolute;}
-            .middle_high .box1{
-                width: 220px;
-                height: 26px;
-                float: left;
-                margin-top: 25px;
-            }
-            .box2{
-                margin: 15px 400px;
-            }
-            .box3{
-                float: right;
-                margin-left: 750px;
-                margin-top: 15px;
-            }
-            .box4 li{
-                float: left;
-                margin-top: 70px;
-                font-size: 14px;
-                font-weight: bold;
-                color: rgba(0, 0, 0, 0.46);
-            }
-            .nav li{
-                float: left;
-                font-size: 15px;
-                color: #FFF;
-                margin-top: 10px;
-            }
-            .nav {width: 100%;
-                background-color: rgba(20, 49, 121, 0.82);
-                overflow: hidden;
-                height: 40px;
-            }
+
+
+            .wrap{border: 1px #000 solid; width: 990px; height: 0 auto;}
+            .high{width: 100%; height: 22px; line-height: 22px;}
+            .high img{vertical-align: middle;}
+            .left li{float: left; font-size: 12px;}
+            .right li{float: right; font-size: 12px;}
+            .middle_high{height: 100px; position: relative;}
+
+        [class^="box"]{position: absolute;}
+            .box1{width: 220px; height: 26px; float: left; margin-top: 25px;}
+            .box2{margin: 15px 410px;}
+            .box3{float: right; margin-left: 750px; margin-top: 15px;}
+            .box4 li{float: left; margin-top: 70px; font-size: 14px; font-weight: bold; color: rgba(0, 0, 0, 0.46);}
+            .box5{margin-left: 645px; margin-top: 69px;}
+            .box6{margin-left: 390px; margin-top: 65px;}
+
+            .nav li{float: left; font-size: 15px; color: #FFF; margin-top: 10px;}
+            .nav {width: 100%; background-color: rgba(20, 49, 121, 0.82); overflow: hidden; height: 40px;}
+            .nav ul ul li{font-size: 12px; float: right;}
+
+            .nav2{width: 100%; height: 40px;}
+            .nav2 li{float: left; font-size: 12px; margin-top: 10px;}
+            .nav2 ul ul li{float: right; font-size: 11px;}
+            .nav2 li bold{font-weight: bold; color: rgba(20, 49, 121, 0.82);}
+
+            .main{border: 1px #000 solid; width: 990px; height: 842px; overflow: hidden;}
+
+            .setion{border: 1px #000 solid; width: 732px; height: 842px;}
+
+            .aside{border: 1px #000 solid; width: 235px; height: 100%; float: right;}
+
+            .footer{border: 1px #000 solid; width: 990px; height: 264px;}
+
 
 
 
          </style>
+</head>
 
 
-
-    </head>
 
     <body>
+
+
+
+
 
         <div class="wrap">
             <header>
@@ -89,7 +72,6 @@
                         </div>
 
                     </div>
-
 
                     <div class="right_high">
                         <div class="right">
@@ -110,32 +92,20 @@
 
 
                 <div class="middle_high">
-
-                    <div class="box1">
-                        <h1><img src="../photoshop image/logo.png"></h1>
-                    </div>
-
-                    <div class="box2">
-                        <div><img src="../photoshop image/banner_top.png"></div>
-                        <div><input type="search"/>
-                        <img src="../photoshop image/icon_zum.png"></div>
-                    </div>
-
-                    <div class="box3">
-                        <div><img src="../photoshop image/musical.png">
+                        <div class="box1"><h1><img src="../photoshop image/logo.png"></h1></div>
+                        <div class="box2"><img src="../photoshop image/banner_top.png"></div>
+                        <div class="box6"><input type="search"/></div>
+                        <div class="box5"><img src="../photoshop image/icon_zum.png"></div>
+                        <div class="box3"><img src="../photoshop image/musical.png"></div>
+                        <div class="box4">
+                            <ul>
+                                <li>인기중고차&nbsp; &#124; &nbsp;</li>
+                                <li>오토바이&nbsp; &#124; &nbsp;</li>
+                                <li>용품장터&nbsp; &#124; &nbsp;</li>
+                                <li>협력업체&nbsp; &#124; &nbsp;</li>
+                                <li>이벤트</li>
+                            </ul>
                         </div>
-                    </div>
-
-                    <div class="box4">
-                        <ul>
-                        <li>인기중고차&nbsp; &#124; &nbsp;</li>
-                        <li>오토바이&nbsp; &#124; &nbsp;</li>
-                        <li>용품장터&nbsp; &#124; &nbsp;</li>
-                        <li>협력업체&nbsp; &#124; &nbsp;</li>
-                        <li>이벤트</li>
-                        </ul>
-                    </div>
-
                 </div>
 
                 <div class="nav">
@@ -146,18 +116,53 @@
                         <li>내차팔기&nbsp; &#124; &nbsp;</li>
                         <li>커뮤니티&nbsp; &#124; &nbsp;</li>
                         <li>더보기<img src="../photoshop image/icon_d.png"></li>
+                            <ul>
+                                <li>보배드림 어플 업데이트 안내&nbsp;&nbsp;</li>
+                                <li><strong>공지</strong><img src="../photoshop image/g.png">&nbsp;&nbsp;</li>
+                            </ul>
                     </ul>
+                </div>
+                <div class="nav2">
+                <ul>
+                    <li>&nbsp;국산차매장&nbsp; &#124; &nbsp;</li>
+                    <li>수입차매장&nbsp; &#124; &nbsp;</li>
+                    <li>승용차매장&nbsp; &#124; &nbsp;</li>
+                    <li>스포츠카매장&nbsp; &#124; &nbsp;</li>
+                    <li>4륜/SUV매장&nbsp; &#124; &nbsp;</li>
+                    <li>벤/승합차매장&nbsp; &#124; &nbsp;</li>
+                    <li>튜닝카매장&nbsp; &#124; &nbsp;</li>
+                    <li>올드카매장&nbsp; &#124; &nbsp;</li>
+                    <li>오토갤러리매장</li>
+                        <ul>
+                            <li>오늘방문&nbsp;&nbsp;<bold>981,478</bold></li>
+                            <li>어제방문&nbsp;&nbsp;<bold>981,478</bold>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        </ul>
+                </ul>
+                </div>
+            </header>
 
+            <div class="main">
+                <div class="setion">
+                    <div class="first-contents">
+
+                    </div>
+                </div>
+                <div class="aside">
 
                 </div>
 
 
 
+            </div>
+
+            <div class="footer">
+
+            </div>
 
 
 
 
-            </header>
+
 
 
 
