@@ -10,6 +10,8 @@
     ol,ul{list-style: none;}
     body{font-size: 12px;}
     a{text-decoration: none; color: #000;}
+    img{vertical-align: top; border:0;}
+    input, button{vertical-align: middle;}
 
 
     /*option*/
@@ -23,7 +25,7 @@
 
     /*layout*/
     .heading{height: 30px; background-color: #f8f8f8; border-bottom: 1px #d5d0cc solid;}
-    .heading .gnb{width: 990px; height: 30px; line-height: 30px; border: 1px #000 solid; margin: 0 auto;}
+    .heading .gnb{width: 990px; height: 30px; line-height: 30px; margin: 0 auto;}
     .gnb a.book_mark{font-size: 11px; background-image: url(../photoshop_image/icon_star.png); background-repeat: no-repeat; background-position: 0 10px; padding: 0 12px;}
 
     .gnb .rank li{font-size: 11px; padding-left: 15px; background-image: url(../photoshop_image/icon_num10.png); background-repeat: no-repeat; background-position: 0 9px;}
@@ -32,25 +34,45 @@
 
     .global_menu li{float: left; font-size: 11px; padding-left: 7px; background-image: url(../photoshop_image/sl.png); background-repeat: no-repeat; background-position: 0 11px; margin-left: 8px;}
     .global_menu li:first-child{background-image: none;}
-    ..global_menu li:last-child{background-image: none;}
     .global_menu strong{color: #3b5998;}
     .global_menu li .icon_ua{background-image: url(../photoshop_image/icon_ua.png); background-repeat: no-repeat; background-position: 2px; margin-left: 2px; padding-left: 15px;}
     .global_menu li .icon_mobile{width: 12px; height: 13px; background-image: url(../photoshop_image/icon_mobile.png); background-repeat: no-repeat; margin-left: 2px; display: inline-block; vertical-align: middle; background-position: 0 9;}
 
-    .lnb{border: 1px #000 solid; width: 990px; height: 107px; margin: 0 auto;}
+    .lnb{width: 990px; height: 107px; margin: 0 auto;}
     .lnb .logo{width: 105px; height: 27px; position: relative; top: 34px; background-image: url(../photoshop_image/logo.png);}
     .lnb .banner{width: 237px; height: 79px; position: relative; top: 13px; background-image: url(../photoshop_image/banner.png);}
     .lnb .search{width: 284px; height: 73px; margin: 0 auto; position: relative; top: 9px;}
-    .lnb .search input[type="text"]{height: 21px; width: 238px; border: 2px #3b5999 solid;}
+    .lnb .search input[type="text"]{height: 21px; width: 238px; border: 2px #3b5999 solid; margin-top: 9px;}
     .lnb .search .zum{position: relative; top: 9px;}
+    .lnb .submenu{position: relative; padding-left: 5px;}
+    .lnb .submenu li{float: left; background-image: url(../photoshop_image/sl.png); background-repeat: no-repeat; margin-left: 8px; padding-left: 7px; background-position: 0 3px; margin-top: 7px;}
+    .lnb .submenu li:first-child{background-image: none; padding-left: 0; margin-left: 0;}
+
+    .nav{width: 990px; height: 76px; border-bottom: 1px #c7cbce solid; margin: 0 auto; position:relative;}
+    .nav>ul{height: 39px; background-color: #3b5999;}
+    .nav>ul>li{float: left; line-height: 39px; font-size: 14px; font-weight: bold; color:}
+    .nav>ul>li>a{color: #FFF; background-image: url(../photoshop_image/sl2.png); background-repeat: no-repeat; background-position: 0 14px; padding-left: 9px; padding-right: 6px; display: block;}
+    .nav>ul>li>a:hover{background-color: #5785f2;}
+    .nav>ul>li:first-child a{margin: 0px; padding-left: 10px; background-image: none;}
+    .nav>ul>li ul{position: absolute;}
+    .nav>ul>li li{float: left; font-size: 11px; color: #666666;}
+    .nav>ul>li li a{color: #666666;}
+
+
+
+    .nav .information{min-width: 200px; position: absolute; top: 0px; right: -2px;}
+    .information .notice{line-height: 39px;}
+    .information .notice h2{font-size: 11px; color: #FFF; float: left; padding-right: 9px; margin-right: 7px;}
+    .information .notice span{font-size: 11px; color: #FFF;}
+    .information .intoday div{font-size: 11px; float: left; line-height: 39px;}
+    .intoday div:first-child{margin-right: 10px;}
+    .intoday div span+span{color: #005dde; font-weight: bold; padding-left: 5px;}
 
 
 
 
-
-
-
-
+    .container{width:990px; border:1px #000 solid; margin:5px auto 0;}
+    .container .section{width: 748px; height: outline: 1px #000 solid; float: left;}
 
 
 
@@ -87,8 +109,9 @@
                         <li><a href=""><i class="icon_mobile"></i>모바일</a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
+            </div> <!--gnb-->
+        </div> <!--heading-->
+
         <div class="lnb">
             <div class="logo fl"></div>
             <div class="banner fr"></div>
@@ -101,15 +124,73 @@
             </div>
             <div class="submenu">
                 <ul>
-                    <li><a href="">인기중고차</a></li>
-                    <li><a href="">오토바이</a></li>
-                    <li><a href="">용품장터</a></li>
-                    <li><a href="">협력업체</a></li>
-                    <li><a href="">이벤트</a></li>
+                    <li><a href=""><img src="../photoshop_image/menu1.png" alt="인기중고차"></a>
+                    <li><a href=""><img src="../photoshop_image/menu2.png" alt="오토바이"></a></li>
+                    <li><a href=""><img src="../photoshop_image/menu3.png" alt="용품장터"></a></li>
+                    <li><a href=""><img src="../photoshop_image/menu3.png" alt="협력업체"></a></li>
+                    <li><a href=""><img src="../photoshop_image/menu4.png" alt="이벤트"></a></li>
                 </ul>
             </div>
 
-        </div>
+        </div> <!--lnb-->
+
+        <div class="nav">
+            <ul>
+                <li class="on"><a href="">사이버매장</a>
+                    <ul>
+                        <li><a href="">국산차매장</a></a></li>
+                        <li><a href="">수입차매장</a></li>
+                        <li><a href="">승용차매장</a></li>
+                        <li><a href="">스포츠카매장</a></li>
+                        <li><a href="">4륜/RV매장</a></li>
+                        <li><a href="">밴/승합차매장</a></li>
+                        <li><a href="">튜닝카매장</a></li>
+                        <li><a href="">올드카매장</a></li>
+                        <li><a href="">오토갤러리매장</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="">국산차매장</a></li>
+                <li><a href="">수입차매장</a></li>
+                <li><a href="">내차팔기</a></li>
+                <li><a href="">커뮤니티</a></li>
+                <li><a href="">더보기</a></li>
+            </ul>
+
+            <div class="information">
+                <div class="notice">
+                    <h2><strong>공지</strong></h2>
+                    <span>보배드림 어플리케이션 안내</span>
+                </div>
+                <div class="intoday">
+                    <div class="today">
+                    <span>오늘방문</span><span>981,478</span>
+                    </div>
+                    <div class="yesterday">
+                    <span>어제방문</span><span>981,478</span>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!--nav-->
+
+        <div class="container">
+            <div class="section">
+                <div class="sec-line">
+                    <div class="fl"><img src="../photoshop_image/benz.png" alt=""></div>
+                    <div class="fr"><img src="../photoshop_image/party.png" alt=""></div>
+                </div>
+            </div> <!--section-->
+
+            <div class="aside">
+
+            </div> <!--aside-->
+
+
+
+
+
+        </div><!--container-->
 
 
 
