@@ -2,6 +2,7 @@
 
 
     @import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+    @import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
 
     @color-white:#FFF;
     @color-black:#000;
@@ -13,7 +14,7 @@
 
     //reset
     body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin: 0; padding: 0;}
-    body{font-family: 'Josefin Slab', serif;}
+    body{font-family: 'Josefin Slab', 'notosanskr' ,sans-serif;}
     ul,ol,li{list-style: none;}
     img{border: 0; vertical-align: top;}
     input{vertical-align: middle;}
@@ -56,4 +57,62 @@
                 }
             }
         }
+    }
+    #container{
+        width: 990px;
+        margin: 20px auto 0;
+        border: 1px #C26670 solid;
+        .entry{
+            .titleWrap{
+                border: 1px #000 solid;
+                h2 a{
+                    font-weight: 300;
+                    border-bottom: 2px @color-main solid;
+                }
+            }//titleWrap close
+            .tagTrail{
+                border: 1px @color-sub solid;
+                border-radius: 3px;
+                margin: 20px 0;
+                padding: 20px;
+                    .tagText{
+                        border-radius: 3px 3px 0 0;
+                        margin-left: 20px;
+                        position: absolute;
+                        left: 0;
+                        top: -30px;;
+                        height: 30px;
+                        padding: 0 15px;
+                        color: @color-white;
+                    }
+                a{
+                    font-style: 12px;
+                    color: @color-white;
+                    background-color: @color-main;
+                    padding: 0 10px;
+                    border-radius: 3px;
+                }
+            } //tagTrail close
+            .comment{
+                margin-top: 30px;
+                .commentList{
+                    border: 1px #F00 solid;
+                    .image{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 3px;
+                        overflow: hidden;;
+                        display: block;
+                        outline: 3px #C26670 solid;
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                } //commentList close
+            } //comment close
+
+        } //entry close
+
+
     }
