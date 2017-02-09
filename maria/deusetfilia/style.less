@@ -35,7 +35,7 @@
             display: inline-block;
             text-transform: uppercase;
             a{
-                color: #000;
+                color: #CCC;
                 span{
                     font-size: 12px;
                     display: block;
@@ -43,13 +43,14 @@
             }
         }
         .blogMenu{
-            font-size: 0;
+            font-size: 0px;
             li{
-                font-size: 14px;
+                font-size: 10px;
                 color: @color-white;
                 display: inline-block;
                 margin: 0 5px;
                 a{
+                    font-size: 14px;
                     color: @color-white;
                     &:hover{
                         color: @color-sub;
@@ -63,17 +64,29 @@
         margin: 20px auto 0;
         border: 1px #C26670 solid;
         .entry{
+
             .titleWrap{
+                padding-bottom: 20px;
                 border: 1px #000 solid;
                 h2 a{
                     font-weight: 300;
                     border-bottom: 2px @color-main solid;
+
                 }
             }//titleWrap close
+            .article{
+                font-size: 13px;
+            }
+            .actionTrail{
+                font-size: 12px;
+                color: @color-sub;
+
+            }
             .tagTrail{
+                font-size: 13px;
                 border: 1px @color-sub solid;
                 border-radius: 3px;
-                margin: 20px 0;
+                margin: 4px 0;
                 padding: 20px;
                     .tagText{
                         border-radius: 3px 3px 0 0;
@@ -86,30 +99,85 @@
                         color: @color-white;
                     }
                 a{
-                    font-style: 12px;
+                    font-size: 12px;
                     color: @color-white;
                     background-color: @color-main;
-                    padding: 0 10px;
-                    border-radius: 3px;
+                    padding: 4px 5px;
+                    border-radius: 10px;
                 }
             } //tagTrail close
             .comment{
                 margin-top: 30px;
+
+                .commentWrite{
+
+                    textarea{
+                        width: 985px;
+                    }
+
+                    input[value="Enter"]{
+                        background-color: @color-main;
+                        border-radius: 10px;
+                        color: @color-white;
+                    }
+
+
+                }
                 .commentList{
-                    border: 1px #F00 solid;
+                    border: 1px #CCC solid;
+
+                    ol>li{
+                        font-size: 11px;
+                        margin: 30px 0;
+                        overflow: hidden;
+
+                    }
+
+                    ol>li .rp_admin{
+                        overflow: hidden;
+                    }
+
+                    ul>li .rp_admin{
+                        margin-left: 68px;
+                    }
+
                     .image{
                         width: 50px;
                         height: 50px;
-                        border-radius: 3px;
+                        border: 3px #C26670 solid;
+                        border-radius: 60px;
                         overflow: hidden;;
                         display: block;
-                        outline: 3px #C26670 solid;
+                        float: left;
+
                     img{
                         width: 100%;
-                    }
-                }
+                        outline: 3px #C26670 solid;
 
-                } //commentList close
+                    }
+                    } //image close
+                    .control{
+                        float: right;
+                            a{
+                                font-size: 11px;
+                                color: @color-white;
+                                background-color: @color-main;
+                                padding: 4px 5px;
+                                border-radius: 10px;
+                            }
+                    } //control close
+
+
+
+
+
+                    } //commentList close
+
+
+
+
+
+
             } //comment close
 
         } //entry close

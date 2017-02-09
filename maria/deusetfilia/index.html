@@ -17,7 +17,7 @@
     <s_t3>
         <div id="header">
             <!--블로그제목-->
-            <h1><a href="[##_blog_link_##]">[##_title_##] <span>찬란한 정우희</span></a></h1>
+            <h1><a href="[##_blog_link_##]">[##_title_##] <span>In nomine Patris et Filii et Spritus Santi</span></a></h1>
 
             <!--블로그메뉴-->
             <div class="blogMenu">[##_blog_menu_##]</div>
@@ -61,7 +61,7 @@
                     </div><!--article close-->
 
                     <!--18-3. 글 관련 태그-->
-                    <s_tag_label>
+                    <s_tag_label><h4>T A G</h4>
                         <div class="tagTrail">
                             <span class="tagText">TAG </span> [##_tag_label_rep_##]
                         </div>
@@ -71,13 +71,13 @@
                     <div class="actionTrail">
                         <a href="#tb" onclick="[##_article_rep_tb_link_##]">
                             <s_tb_count>
-                                트랙백 <span class="cnt">[##_article_rep_tb_cnt_##]</span>개
+                                Trackback<!--트랙백--> <span class="cnt">[##_article_rep_tb_cnt_##]</span><!--개가 달렸습니다.-->
                             </s_tb_count>
                         </a>
                         ,
                         <a href="#rp" onclick="[##_article_rep_rp_link_##]">
                             <s_rp_count>
-                                댓글 <span class="cnt">[##_article_rep_rp_cnt_##]</span>개가 달렸습니다.
+                                Reply<!--댓글--> <span class="cnt">[##_article_rep_rp_cnt_##]</span><!--개가 달렸습니다.-->
                             </s_rp_count>
                         </a>
                     </div>
@@ -89,8 +89,8 @@
 
                     <s_rp>
                         <div class="comment">
-                            <h3>댓글을 달아 주세요 </h3>
-                            <div class="commentList">18-6-1 리스트 </div>
+                            <h4>Leave A comment</h4>
+                            <div class="commentList">commnet list</div>
                             <div class="commentList">
                                 <s_rp_container>
                                     <ol>
@@ -112,7 +112,7 @@
                                                         <s_rp2_rep><!--댓글에 댓글-->
                                                             <li id='[##_rp_rep_id_##]'>
                                                                 <div class="[##_rp_rep_class_##]"> <!--댓글과 클래스 이름이 같음-->
-                                                                    <span class="image">[##_rp_rep_logo_##]</span>
+                                                                    <span class="image"><img src="[##_rp_rep_logo_##]" alt="[##_rp_rep_logo_##] 님의 사진입니다">[##_rp_rep_logo_##]</span>
                                                                     <span class="name">[##_rp_rep_name_##]</span>
                                                                     <span class="date"> [##_rp_rep_date_##]</span>
                                                                     <span class="control">
@@ -131,7 +131,7 @@
                                 </s_rp_container>
                             </div>
                             <!--댓글쓰기-->
-                            <div class="commentWrite">18-6-2 글쓰기 </div>
+                            <div class="commentWrite">write here</div>
                             <s_rp_input_form>
                                 <div class="commentWrite">
                                     <s_rp_member>
@@ -157,10 +157,10 @@
                                     <p>
                                         <textarea name="[##_rp_input_comment_##]" rows="10" cols="50"></textarea>
                                     </p>
-                                    <p>
-                                        <input type="submit" value="댓글 달기" onclick="[##_rp_onclick_submit_##]" />
+                                    <p><!--댓글버튼-->
+                                        <input type="submit" value="Enter" onclick="[##_rp_onclick_submit_##]" />
                                     </p>
-                                </div>
+                                </div><!--commentWrite close-->
                             </s_rp_input_form>
                         </div><!--comment close-->
                     </s_rp>
