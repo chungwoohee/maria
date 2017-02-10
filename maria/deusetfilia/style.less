@@ -12,6 +12,8 @@
     @color-line:@color-sub;
     @color-font:#000;
 
+    @layoutwidth:700px;
+
     //reset
     body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin: 0; padding: 0;}
     body{font-family: 'Josefin Slab', 'notosanskr' ,sans-serif;}
@@ -63,6 +65,11 @@
         width: 990px;
         margin: 20px auto 0;
         border: 1px #C26670 solid;
+
+        #content{
+            width:@layoutwidth;
+            float:left;
+          }
         .entry{
 
             .titleWrap{
@@ -126,15 +133,20 @@
                 .commentList{
                     border: 1px #CCC solid;
 
+                    li{
+                        position: relative;
+                    }
+
                     ol>li{
                         font-size: 11px;
-                        margin: 30px 0;
+                        margin: 20px 0;
                         overflow: hidden;
 
                     }
 
                     ol>li .rp_admin{
                         overflow: hidden;
+
                     }
 
                     ul>li .rp_admin{
@@ -158,6 +170,7 @@
                     } //image close
                     .control{
                         float: right;
+                        position: relative; top: 15px;
                             a{
                                 font-size: 11px;
                                 color: @color-white;
@@ -165,22 +178,34 @@
                                 padding: 4px 5px;
                                 border-radius: 10px;
                             }
+                            +p{
+
+                                font-size: 11px;
+                                overflow: hidden;
+                                width: 720px;
+                                position: relative; left: 10px; top: 2px;
+
+                            }
                     } //control close
 
-
-
-
-
-                    } //commentList close
-
-
-
-
-
-
+                } //commentList close
             } //comment close
-
+            .paging{ //paging  number PREV < NEXT >
+                text-align: center;
+                padding: 20px 0;
+                a{
+                    font-size: 11px;
+                    border: 3px @color-main solid;
+                    padding: 0 5px;
+                    border-radius: 3px;
+                    font-style: 12px;
+                }
+            }
         } //entry close
 
-
-    }
+            #sidebar{
+                margin-left: @layoutwidth;
+                border: 3px #F00 solid;
+                padding: 0 10px;
+            }
+    } //container close
