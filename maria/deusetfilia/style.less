@@ -1,12 +1,12 @@
     // out:style.css, sourcemap: false, compress: true
 
 
-    @import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+
     @import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
 
     @color-white:#FFF;
     @color-black:#000;
-    @color-sub:#CCC;
+    @color-sub:#e5e5e5;
     @color-main:#C26670;
     @color-master:#C26670;
     @color-line:@color-sub;
@@ -16,8 +16,8 @@
 
     //reset
     body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin: 0; padding: 0;}
-    body{font-family: 'Josefin Slab', 'notosanskr' ,sans-serif;}
-    ul,ol,li{list-style: none;}
+    body{font-family: 'notosanskr' ,sans-serif;}
+    ul,ol,li,tr,td{list-style: none;}
     img{border: 0; vertical-align: top;}
     input{vertical-align: middle;}
     a{
@@ -28,16 +28,16 @@
     //layout
     #header{
         padding: 20px 50px;;
-        outline: 1px #CCC solid; text-align: center; background-color: #C26670;
+        outline: 1px #e5e5e5 solid; text-align: center;
         h1{
-            font-size: 30px;
+            font-size: 50px;
             font-weight: 300;
-            border-bottom: 1px @color-sub solid;
+            //border-bottom: ;
             padding-bottom: 5px;
             display: inline-block;
             text-transform: uppercase;
             a{
-                color: #CCC;
+                color: @color-sub;
                 span{
                     font-size: 12px;
                     display: block;
@@ -45,7 +45,7 @@
             }
         }
         .blogMenu{
-            font-size: 0px;
+
             li{
                 font-size: 10px;
                 color: @color-white;
@@ -62,9 +62,10 @@
         }
     }
     #container{
+        position: relative;
         width: 990px;
         margin: 20px auto 0;
-        border: 1px #C26670 solid;
+
 
         #content{
             width:@layoutwidth;
@@ -74,15 +75,16 @@
 
             .titleWrap{
                 padding-bottom: 20px;
-                border: 1px #000 solid;
+                //border: 1px #000 solid;
                 h2 a{
-                    font-weight: 300;
-                    border-bottom: 2px @color-main solid;
+                    font-weight: 200;
+
 
                 }
             }//titleWrap close
             .article{
                 font-size: 13px;
+
             }
             .actionTrail{
                 font-size: 12px;
@@ -119,10 +121,11 @@
                 .commentWrite{
 
                     textarea{
-                        width: 985px;
+                        width: 694px;
+                        border-color: @color-sub;
                     }
 
-                    input[value="Enter"]{
+                    input[value="comment"]{
                         background-color: @color-main;
                         border-radius: 10px;
                         color: @color-white;
@@ -131,7 +134,7 @@
 
                 }
                 .commentList{
-                    border: 1px #CCC solid;
+                    border: 1px #e5e5e5 solid;
 
                     li{
                         position: relative;
@@ -146,17 +149,19 @@
 
                     ol>li .rp_admin{
                         overflow: hidden;
-
+                        position: relative; left: 10px;
                     }
 
-                    ul>li .rp_admin{
-                        margin-left: 68px;
+                    ol>li .rp_general{
+                        overflow: hidden;
+                        position: relative; left: 10px;
                     }
+
 
                     .image{
                         width: 50px;
                         height: 50px;
-                        border: 3px #C26670 solid;
+
                         border-radius: 60px;
                         overflow: hidden;;
                         display: block;
@@ -164,13 +169,13 @@
 
                     img{
                         width: 100%;
-                        outline: 3px #C26670 solid;
+
 
                     }
                     } //image close
                     .control{
                         float: right;
-                        position: relative; top: 15px;
+                        position: relative; top: 26px; left:-23px;
                             a{
                                 font-size: 11px;
                                 color: @color-white;
@@ -182,10 +187,11 @@
 
                                 font-size: 11px;
                                 overflow: hidden;
-                                width: 720px;
-                                position: relative; left: 10px; top: 2px;
+                                width: 663px;
+                                position: relative; left: 9px; top: 1px;
 
                             }
+
                     } //control close
 
                 } //commentList close
@@ -195,7 +201,6 @@
                 padding: 20px 0;
                 a{
                     font-size: 11px;
-                    border: 3px @color-main solid;
                     padding: 0 5px;
                     border-radius: 3px;
                     font-style: 12px;
@@ -205,10 +210,27 @@
 
             #sidebar{
                 margin-left: @layoutwidth;
-                border: 3px @color-sub solid;
+                border: 1px @color-sub solid;
                 padding: 0 10px;
+                font-size: 12px;
 
-                .blogImage img{width: 264px;}
+                .blogImage img{width: 269px;}
+
+                .blogDesc {
+                    font-size: 13px;}
+
+                .calender tbody{
+                    text-align: center;
+                }
+
+                .search{
+                    input[type="text"]{
+                        border-color: @color-sub;
+                        width: 204px;
+                    }
+                    //input[value="submit"]{}
+                }
 
             }
+
     } //container close

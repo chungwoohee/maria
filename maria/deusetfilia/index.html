@@ -27,7 +27,7 @@
         <div id="container">
 
             <div id="content">
-                <!--    <div class="searchList">11. 검색 결과 리스트</div>
+                <!--    <div class="searchList">11. 검색 결s과 리스트</div>
                 <div class="searchRplist">12. 검색 결과 댓글 리스트</div>
                 <div class="locallog">13. 위치 로그</div>
                 <div class="taglog">14. 태그 클라우드</div>
@@ -41,7 +41,7 @@
                 <div class="entry">
                     <!--18-1. 글 제목 | 카테고리 | 작성일 | 글 관리-->
                     <div class="titleWrap">
-                        <h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+                        <h3><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h3>
                         <div class="category"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a> </div>
                         <div class="date">[##_article_rep_date_##]</div>
                         <s_ad_div>
@@ -90,7 +90,7 @@
                     <s_rp>
                         <div class="comment">
                             <h4>Leave A comment</h4>
-                            <div class="commentList">commnet list</div>
+                            <!--<div class="commentList">commnet list</div>-->
                             <div class="commentList">
                                 <s_rp_container>
                                     <ol>
@@ -131,7 +131,7 @@
                                 </s_rp_container>
                             </div>
                             <!--댓글쓰기-->
-                            <div class="commentWrite">write here</div>
+                            <h4 class="commentWrite">write here</h4>
                             <s_rp_input_form>
                                 <div class="commentWrite">
                                     <s_rp_member>
@@ -158,7 +158,7 @@
                                         <textarea name="[##_rp_input_comment_##]" rows="10" cols="50"></textarea>
                                     </p>
                                     <p><!--댓글버튼-->
-                                        <input type="submit" value="Enter" onclick="[##_rp_onclick_submit_##]" />
+                                        <input type="submit" value="comment" onclick="[##_rp_onclick_submit_##]" />
                                     </p>
                                 </div><!--commentWrite close-->
                             </s_rp_input_form>
@@ -209,12 +209,68 @@
 
 
             </s_sidebar_element>
+
+            <s_sidebar_element>
+                <!-- 최근에 올라온 글 -->
+                <div class="recentPost">
+                    <h3>Recent Post</h3>
+                    <ul>
+                        <s_rctps_rep>
+                            <li>
+                                <a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##].</a>
+                                <span class="cnt">[##_rctps_rep_rp_cnt_##]</span>
+                            </li>
+                        </s_rctps_rep>
+                    </ul>
+                </div>
+            </s_sidebar_element>
+
+            <!-- 달력 -->
+            <s_sidebar_element>
+                <div class="calender">
+                    <h3>calender</h3>
+                    [##_calendar_##]
+                </div>
+            </s_sidebar_element>
+
+            <!-- 링크 -->
+            <s_sidebar_element>
+                <div class="link">
+                    <h3>Youtube link here</h3>
+                    <ul>
+                        <s_link_rep>
+                            <li>
+                                <a href="[##_link_url_##]:https://www.youtube.com/channel/UCRIMHpVC9yc5gq8aznk0IxA" onclick="window.open(this.href); return false"> [##_link_site_##].</a>
+                            </li>
+                        </s_link_rep>
+                    </ul>
+                </div>
+            </s_sidebar_element>
+
+            <!-- 방문자수 -->
+            <s_sidebar_element>
+                <div class="counter">
+                    <span class="total">Total : [##_count_total_##] </span>
+                    <span class="today">Today : [##_count_today_##]</span>
+                    <span class="yesterday">Yesterday : [##_count_yesterday_##]</span>
+                </div>
+            </s_sidebar_element>
+
+
+            <!--검색-->
+            <s_sidebar_element>
+                <div class="search">
+                    <s_search>
+                        <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"/>
+                        <input value="search" type="button" onclick="[##_search_onclick_submit_##]" class="submit"/>
+                    </s_search>
+                </div>
+            </s_sidebar_element>
+
+
+
+
         </div> <!-- sidebar close -->
-
-        <!--카테고리-->
-
-
-
 
 
         <div id="footer">
