@@ -97,7 +97,7 @@
                                         <s_rp_rep>
                                             <li id='[##_rp_rep_id_##]'>
                                                 <div class="[##_rp_rep_class_##]">
-                                                    <span class="image"><img src="[##_rp_rep_logo_##]" alt="[##_rp_rep_logo_##] 님의 사진입니다">[##_rp_rep_logo_##]</span>
+                                                    <!--<span class="image"><img src="[##_rp_rep_logo_##]" alt="[##_rp_rep_logo_##] 님의 사진입니다">[##_rp_rep_logo_##]</span>-->
                                                     <span class="name">[##_rp_rep_name_##]</span>
                                                     <span class="date"> [##_rp_rep_date_##]</span>
                                                     <span class="control">
@@ -112,7 +112,7 @@
                                                         <s_rp2_rep><!--댓글에 댓글-->
                                                             <li id='[##_rp_rep_id_##]'>
                                                                 <div class="[##_rp_rep_class_##]"> <!--댓글과 클래스 이름이 같음-->
-                                                                    <span class="image"><img src="[##_rp_rep_logo_##]" alt="[##_rp_rep_logo_##] 님의 사진입니다">[##_rp_rep_logo_##]</span>
+                                                                    <!--<span class="image"><img src="[##_rp_rep_logo_##]" alt="[##_rp_rep_logo_##] 님의 사진입니다">[##_rp_rep_logo_##]</span>-->
                                                                     <span class="name">[##_rp_rep_name_##]</span>
                                                                     <span class="date"> [##_rp_rep_date_##]</span>
                                                                     <span class="control">
@@ -198,9 +198,23 @@
                 <!-- 블로그 정보 -->
                 <div class="blogImage">
                     <div class="blogImage"><img src="[##_image_##]" alt="sidebar_Img" /></div>
-                    <div class="blogDesc">[##_desc_##] <span class="userID">[##_blogger_##]</span></div>
+                    <div class="blogDesc">[##_desc_##] <!--<span class="userID">[##_blogger_##]</span>--></div>
                 </div>
             </s_sidebar_element>
+
+            <!--검색-->
+            <s_sidebar_element>
+                <div class="search">
+                    <s_search>
+                        <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"/>
+                        <input value="search" type="button" onclick="[##_search_onclick_submit_##]" class="submit"/>
+                    </s_search>
+                </div>
+            </s_sidebar_element>
+
+
+
+            <!--카테고리-->
             <s_sidebar_element>
                 <div class="category">
                     <h3>Category</h3>
@@ -255,19 +269,6 @@
                     <span class="yesterday">Yesterday : [##_count_yesterday_##]</span>
                 </div>
             </s_sidebar_element>
-
-
-            <!--검색-->
-            <s_sidebar_element>
-                <div class="search">
-                    <s_search>
-                        <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"/>
-                        <input value="search" type="button" onclick="[##_search_onclick_submit_##]" class="submit"/>
-                    </s_search>
-                </div>
-            </s_sidebar_element>
-
-
 
 
         </div> <!-- sidebar close -->
