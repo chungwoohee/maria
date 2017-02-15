@@ -52,13 +52,12 @@
         .blogMenu{
 
             li{
+                border: 1px #f00 solid;
                 font-size: 10px;
-                color: @color-white;
                 display: inline-block;
                 margin: 0 5px;
                 a{
                     font-size: 14px;
-                    color: @color-white;
                     &:hover{
                         color: @color-sub;
                     }
@@ -110,6 +109,21 @@
                     width: 660px;
                     margin-left: 15px;
 
+                    .guest_admin .name a{
+                        border: 1px #F00 solid;
+                        font-size: 11px;
+                    }
+
+                    .guest_admin .date{
+                        border: 1px #F00 solid;
+
+                    }
+
+                    .guest_admin .control{
+                        border: 1px #F00 solid;
+
+                    }
+
 
 
 
@@ -120,6 +134,7 @@
 
           } //content close
         .entry{
+            position: relative;
 
             .titleWrap{
                 padding-bottom: 20px;
@@ -133,6 +148,25 @@
                     transform:scale(1.2);
                     color: @color-main;
                     }
+                }
+                .category a{
+                    font-size: 13px;
+                    position: relative;
+                    top: 574px;
+                    left: 589px;
+                }
+
+                .date{
+                    font-size: 11px;
+                    position: relative;
+                    top: 574px;
+                    left: 612px;
+                    color: @color-sub;
+                }
+
+                .admin {
+                    font-size: 11px;
+                    text-align: center;
                 }
 
             } //titleWrap close
