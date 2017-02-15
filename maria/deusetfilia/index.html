@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="robots" content="index,follow">
     <meta charset="UTF-8">
+    <meta name="description" content="[##_desc_##]">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="가톨릭, 천주교, 하느님, 아멘, 성부, 성자, 성령, 마리아, 예수, deus et filia, deus, filia, In nomine Patris et filii et spritus santi, patris, filii, spritus santi, deusetfilia">
+    <meta name="google-site-verification" content="UTnZvx45x8LMeVJ9JYK-3smwrepaB0G-lqafExHJWqE" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--타이틀-->
     <title>[##_title_##] :: [##_page_title_##]</title>
     <link rel="stylesheet" href="./style.css" />
-
     <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
 
 </head>
@@ -30,11 +33,79 @@
                 <!--    <div class="searchList">11. 검색 결s과 리스트</div>
                 <div class="searchRplist">12. 검색 결과 댓글 리스트</div>
                 <div class="locallog">13. 위치 로그</div>
-                <div class="taglog">14. 태그 클라우드</div>
-                <div class="guestbook">15. 방명록
-                <div class="guestWrite">15-1. 방명록 글쓰기</div>
-                <div class="guestList">15-2. 방명록 리스트</div>
-            </div><!-- guestbook close
+                <div class="taglog">14. 태그 클라우드</div>-->
+                <!--방명록-->
+                <s_guest>
+                    <div class="guestbook">
+                        <h3>guestbook</h3>
+                        <!--<div class="guestWrite">Write</div>-->
+                        <!--<div class="guestList">List</div>-->
+                    </div>
+
+
+                <!--방명록 글쓰기-->
+                <s_guest_input_form>
+                <div class="guestWrite">
+                <s_guest_member>
+                <s_guest_form>
+                <p>
+                <input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" /> <label for="name"> : 이름 </label>
+                </p>
+                <p>br> <input type="password" maxlength="8" name="[##_guest_input_password_##]" value="[##_guest_password_##]" /> <label for="password"> : 패스워드 </label>
+                </p>
+                <p>
+                <input type="text" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]" /> <label for="homepage"> : 홈페이지 </label>
+                </p>
+                </s_guest_form>
+                </s_guest_member>
+                <p>
+                <textarea name="[##_guest_textarea_body_##]" cols="50" rows="6"></textarea>
+                </p>
+                <p>
+                <input type="submit" value="leave" onclick="[##_guest_onclick_submit_##]"/>
+                </p>
+                </div>
+                </s_guest_input_form>
+
+                <!--방명록리스트-->
+                <s_guest_container>
+                    <div class="guestList">
+                        <ol>
+                            <s_guest_rep>
+                                <li id='[##_guest_rep_id_##]'>
+                                    <div class="[##_guest_rep_class_##]">
+                                        <span class="name">[##_guest_rep_name_##]</span>
+                                        <span class="date"> [##_guest_rep_date_##]</span>
+                                        <span class="control">
+                                            <a href="#" onclick="[##_guest_rep_onclick_delete_##]">MODIFY/DELETE</a>
+                                            <a href="#" onclick="[##_guest_rep_onclick_reply_##]">REPLY</a>
+                                        </span>
+                                        <p>[##_guest_rep_desc_##]</p>
+                                    </div>
+                                    <s_guest_reply_container>
+                                        <ul>
+                                            <s_guest_reply_rep>
+                                                <li id='[##_guest_rep_id_##]'>
+                                                    <div class="[##_guest_rep_class_##]">
+                                                        <span class="name">[##_guest_rep_name_##]</span>
+                                                        <span class="date"> [##_guest_rep_date_##]</span>
+                                                        <span class="control">
+                                                            <a href="#" onclick="[##_guest_rep_onclick_delete_##]">
+                                                                MODIFY/DELETE </a>
+                                                            </span>
+                                                            <p>[##_guest_rep_desc_##]</p>
+                                                        </div>
+                                                    </li>
+                                                </s_guest_reply_rep>
+                                            </ul>
+                                        </s_guest_reply_container>
+                                    </li>
+                                </s_guest_rep>
+                            </ol>
+                        </div>
+                    </s_guest_container>
+            </s_guest>
+            <!--
             <div class="entryNotice">16. 공지사항 글</div>
             <div class="entryProtected">17. 보호 글</div>-->
             <s_article_rep>
