@@ -1,3 +1,91 @@
 // out: common.css, sourcemap: true, compress: true
 
-body{border: 1px #F00 solid;} 
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+@color-white:#FFF;
+@color-black:#000;
+@color-main:#008889;
+@color-sub:#555;
+
+body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin: 0; padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+body{font-family: 'Oswald', sans-serif;}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+
+    .topmenu{
+        text-align: center;
+
+
+        .logo{
+            img{
+                position: absolute;
+                top: 21px;
+                left: 33px;
+                float: left;
+            }
+        }
+
+        .mainNavWrap{
+            border: 1px #F00 solid;
+            margin: 0 auto;
+            width: 1200px;
+            height: 80px;
+            ul{
+                li{
+                    span{
+                        color: @color-white;
+                        font-weight: bold;
+                        border: 1px #F00 solid;
+                        line-height: 80px;
+                        float: left;
+                        margin: 0 20px;
+                        width: 180px;
+                        height: 100%;
+                        padding: 0 9px;
+                        font-size: 15px;
+                    }
+                }
+            }
+            } //mainNavWrap close
+            .gnb_right div>div{
+                background-color: @color-main;
+            }
+            .gnb_right{
+                .Btn{
+                    border: 1px #F00 solid;
+                    width: 86px;
+                    height: 35px;
+
+                    .homeBtn{
+                        float: left;
+                        width: 40px;
+                        height: 100%;
+                        border: 1px #F00 solid;
+                        background: url(http://www.tkgroup.co.kr/kor/_Img/Layout/home-ico.png);
+                        background-repeat: no-repeat;
+                        background-position: 50%;
+                        background-color: @color-black;
+                    }
+                    .lang{
+                        padding-left: 1px;
+                        width: 45px;
+                        height: 100%;
+                        font-size: 12px;
+                        font-weight: bold;
+                        line-height: 35px;
+                        color: @color-white;
+                    }
+
+                } //Btn close
+
+
+                } //gnb_right close
+
+        } //topmenu close
+    } //header close
