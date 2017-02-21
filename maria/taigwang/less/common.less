@@ -2,9 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+
 @color-white:#FFF;
 @color-black:#000;
-@color-main:#008889;
+@color-main:#086c6d;
 @color-sub:#555;
 
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin: 0; padding: 0;}
@@ -12,13 +13,15 @@ a{text-decoration: none;}
 li{list-style: none;}
 body{font-family: 'Oswald', sans-serif;}
 
+.totalwarp{
+
 .header{
-    position: relative;
     width: 100%;
     height: 80px;
     background-color: #000;
 
     .topmenu{
+        position: relative;
         text-align: center;
 
 
@@ -32,16 +35,15 @@ body{font-family: 'Oswald', sans-serif;}
         }
 
         .mainNavWrap{
-            border: 1px #F00 solid;
             margin: 0 auto;
             width: 1200px;
             height: 80px;
+
             ul{
                 li{
                     span{
                         color: @color-white;
                         font-weight: bold;
-                        border: 1px #F00 solid;
                         line-height: 80px;
                         float: left;
                         margin: 0 20px;
@@ -49,43 +51,158 @@ body{font-family: 'Oswald', sans-serif;}
                         height: 100%;
                         padding: 0 9px;
                         font-size: 15px;
+
+                    &:hover{
+                        color: @color-main;
                     }
-                }
+
+                    } //span close
+
+                    span.underline{
+                        position: absolute;
+                        top: 77px;
+                        left: 280px;
+                        background-color: #086c6d;
+                        height: 3px;
+                        width: 220px;
+                        transition: 1s;
+                        }
+                    }
+
             }
             } //mainNavWrap close
-            .gnb_right div>div{
-                background-color: @color-main;
-            }
+
             .gnb_right{
-                .Btn{
-                    border: 1px #F00 solid;
-                    width: 86px;
+                float: right;
+                height: 35px;
+                width: 140px;
+                margin-top: 22px;
+
+                .homeBtn{
+                    float: left;
+                    width: 40px;
+                    height: 100%;
+                    background: url(http://www.tkgroup.co.kr/kor/_Img/Layout/home-ico.png);
+                    background-repeat: no-repeat;
+                    color: @color-white;
+                    background-position: 50%;
+                    background-color: #222222;
+                    transition: 1s;
+
+                    &:hover {
+                        background-color: #CCC;
+                    }
+                }
+
+                .lang{
+                    span{
+                    float: left;
+                    width: 45px;
+                    height: 100%;
+                    color: @color-white;
+                    font-size: 13px;
+                    background-color: @color-main;
+                    line-height: 35px;
+                    transition: 2s;
+
+                    &:hover{
+                        background-color: #199390;
+                        }
+                    } // span close
+                } // lang close
+
+                .Btnmenuall{
+                    float: right;
+                    width: 45px;
                     height: 35px;
 
-                    .homeBtn{
-                        float: left;
-                        width: 40px;
-                        height: 100%;
-                        border: 1px #F00 solid;
-                        background: url(http://www.tkgroup.co.kr/kor/_Img/Layout/home-ico.png);
-                        background-repeat: no-repeat;
-                        background-position: 50%;
-                        background-color: @color-black;
+                &:hover .line1{
+                    animation: line1 1s infinite;
+                    animation-timing-function: linear;
                     }
-                    .lang{
-                        padding-left: 1px;
-                        width: 45px;
-                        height: 100%;
-                        font-size: 12px;
-                        font-weight: bold;
-                        line-height: 35px;
-                        color: @color-white;
+                &:hover .line2{
+                    animation: line2 1s infinite;
+                    animation-timing-function: linear;
+                    }
+                &:hover .line3{
+                    animation: line3 1s infinite;
+                    animation-timing-function: linear;
                     }
 
-                } //Btn close
+
+                        span.line1{
+                            position: absolute;
+                            top: 30px;
+                            right: 13px;
+                            width: 22px;
+                            height: 2px;
+                            background-color: @color-white;
+
+                        }
+
+                        span.line2{
+                            position: absolute;
+                            top: 38px;
+                            right: 13px;
+                            width: 16px;
+                            height: 2px;
+                            background-color: @color-white;
+                        }
+
+                        span.line3{
+                            position: absolute;
+                            top: 47px;
+                            right: 13px;
+                            width: 22px;
+                            height: 2px;
+                            background-color: @color-white;
+                        }
 
 
-                } //gnb_right close
+                    } //Btnmenuall close
+
+
+            } //gnb_right close
 
         } //topmenu close
     } //header close
+
+    section span{
+        width: 100%;
+        display: block;
+        text-align: center;
+        top: 500px;
+        position: absolute;
+        border: 1px solid #f00;
+    }
+
+
+
+
+
+
+
+} //totalwarp close
+
+
+
+
+
+//linear
+@keyframes line1{
+    0%{transition: 2s; width: 22px;}
+    50%{transition: 2s; width: 16px;}
+    100%{transition: 2s; width: 22px;}
+}
+
+@keyframes line2{
+    0%{transition: 2s; width: 16px;}
+    50%{transition: 2s; width: 22px;}
+    100%{transition: 2s; width: 16px;}
+}
+
+@keyframes line3{
+    0%{transition: 2s; width: 22px;}
+    50%{transition: 2s; width: 16px;}
+    100%{transition: 2s; width: 22px;}
+}
