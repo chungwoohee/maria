@@ -9,67 +9,29 @@
 @color-sub:#555;
 
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin: 0; padding: 0;}
-a{text-decoration: none;}
+a{text-decoration: none; color: @color-black;}
 ol,ul,li{list-style: none;}
-body{font-family: 'Oswald', sans-serif;}
-img,video{vertical-align:top;}
+body{font-family: 'Oswald', sans-serif;
+overflow-x:none;}
+.intro{border:1px #F00 solid;position:relative;z-index:0;}
 
 .totalwarp{
+    height: 80px;
+    background-color: @color-white;
 
     header{
-        width: 100%;
-
-        [class^="un"]{
-            width: 220px;
-            border: 1px #F00 solid;
-            float: left;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        [class^="un"] li{
-            border: 1px #F00 solid;}
-
-        .underWrap{
-            width: 1200px;
-            height: 195px;
-            border: 1px #F00 solid;
-            position: absolute;
-            left: 313px;
-            background-color: @color-white;
-
-            .underMenu1{
-                border: 1px #00F solid;
-                width: 200px;
-                margin-left: 20px;
-            }
-            .underMenu2{
-                border: 1px #00F solid;
-                width: 200px;
-                margin-left: 38px;
-            }
-            .underMenu3{
-                border: 1px #00F solid;
-                width: 200px;
-                margin-left: 38px;
-            }
-            .underMenu4{
-                border: 1px #00F solid;
-                width: 200px;
-                margin-left: 38px;
-            }
-
-
-        } //underWrap close
 
         .header{
-            width: 100%;
-            height: 80px;
-            background-color: #000;
+            position: relative;
+            background-color: @color-white;
+            z-index: 10;
 
             .topmenu{
                 position: relative;
                 text-align: center;
+                height: 80px;
+                background: @color-black;
+                padding: 0 30px;
 
 
                 .logo{
@@ -82,10 +44,8 @@ img,video{vertical-align:top;}
                 }
 
                 .mainNavWrap{
-                    border: 1px #F00 solid;
                     margin: 0 auto;
                     width: 1200px;
-                    height: 80px;
 
                     ul{
                         li{
@@ -98,34 +58,52 @@ img,video{vertical-align:top;}
                                 margin: 0 20px;
                                 width: 180px;
                                 height: 100%;
-                                padding: 0 9px;
+                                //padding: 0 9px;
                                 font-size: 15px;
 
                             &:hover{
                                 color: @color-main;
                             }
-
                             } //span close
 
-                            span.underline{
-                                position: absolute;
-                                top: 77px;
-                                left: 314px;
-                                background-color: #086c6d;
-                                height: 3px;
-                                width: 220px;
-                                margin: 0;
-                                }
-                            }
-
+                        }
                     }
-                    } //mainNavWrap close
+
+                .company{
+                    float: left;
+                }
+                .company li{
+                    width: 220px;
+                    }
+                .managementinnovation{
+                    float: left;
+                }
+                .portfolio{
+                    float: left;
+                }
+                .sustainabilitymanagement{
+                    float: left;
+                }
+
+
+
+                } //mainNavWrap close
+
+                    .mainNavWrap:after{
+                        content: "";
+                        display: block;
+                        width: 220px;
+                        height: 3px;
+                        background-color: #086c6d;
+                        position: absolute;
+                        bottom: 0;
+                    }
 
                     .gnb_right{
                         float: right;
                         height: 35px;
-                        width: 140px;
                         margin-top: 22px;
+                        margin-right: 20px;
 
                         .homeBtn{
                             float: left;
@@ -161,7 +139,6 @@ img,video{vertical-align:top;}
                         } // lang close
 
                         .Btnmenuall{
-                            float: right;
                             width: 45px;
                             height: 35px;
 
@@ -216,11 +193,12 @@ img,video{vertical-align:top;}
                 } //topmenu close
             } //header close
     } //header close
-        section span{
+
+    section span{
             width: 100%;
             display: block;
             text-align: center;
-            top: 500px;
+            top: 360px;
             position: absolute;
             border: 1px solid #f00;
         }
