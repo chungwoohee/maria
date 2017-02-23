@@ -13,7 +13,9 @@ a{text-decoration: none; color: @color-black;}
 ol,ul,li{list-style: none;}
 body{font-family: 'Oswald', sans-serif;
 overflow-x:none;}
-.intro{border:1px #F00 solid;position:relative;z-index:0;}
+
+.intro{border:1px #F00 solid;position:relative;z-index:0;
+font-size: 0;}
 
 .totalwarp{
     height: 80px;
@@ -46,6 +48,10 @@ overflow-x:none;}
                 .mainNavWrap{
                     margin: 0 auto;
                     width: 1200px;
+
+                    ul {
+                        //overflow: hidden;
+                    }
 
                     ul{
                         li{
@@ -204,9 +210,12 @@ overflow-x:none;}
         }
 
 
-
-
-
+        .grid ul>li{
+            outline: 1px #F00 solid;
+            float: left;
+            //display: flex;
+            width: 33.3%;
+        }
 
 
 } //totalwarp close

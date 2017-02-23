@@ -14,7 +14,12 @@
     <script>
         $(function(){
 
+            $('.menu>ul>li').hover(function(){
+                $('.menu>ul>li').children('div').stop().slideDown()
 
+            },function(){
+                $('.menu>ul>li').children('div').stop().slideUp()
+            })
 
         });
     </script>
@@ -158,42 +163,12 @@
            }
 
 
-
         .intro{
             background-color: #CCC;
             height:300px;
             position:relative;
-            z-index:-1;
+            z-index:1;
         }
-
-        @media screen and (max-width:1000px) {
-            header{
-                position:static;
-            }
-            header>div{
-                overflow:visible;
-            }
-
-            .gnb .menu{
-                position:absolute;
-                right:0;
-                height:100%;
-                width:223px;
-                background-color:#FFF;
-            }
-            .gnb .menu>ul>li{
-                background-color:#FFF;
-            }
-
-
-            .gnb .menu>ul>li>a{
-                color:#000;
-                line-height:68px;
-
-            }
-
-        }
-
 
      </style>
 </head>
