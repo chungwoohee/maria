@@ -7,6 +7,7 @@
 @color-black:#000;
 @color-main:#086c6d;
 @color-sub:#555;
+@color-line:#e5e5e5;
 
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin: 0; padding: 0;}
 a{text-decoration: none; color: @color-black;}
@@ -18,10 +19,11 @@ overflow-x:none;}
 font-size: 0;}
 
 .totalwarp{
-    height: 80px;
-    background-color: @color-white;
+
 
     header{
+        height: 80px;
+        background-color: @color-white;
 
         .header{
             position: relative;
@@ -29,7 +31,6 @@ font-size: 0;}
             z-index: 10;
 
             .topmenu{
-                position: relative;
                 text-align: center;
                 height: 80px;
                 background: @color-black;
@@ -48,20 +49,31 @@ font-size: 0;}
                 .mainNavWrap{
                     margin: 0 auto;
                     width: 1200px;
-
-                    ul {
-                        //overflow: hidden;
+                    ul>li>ul{
+                        padding: 25px 0;
                     }
+
+                    ul>li>ul a{
+                        color: @color-sub;
+
+                        &:hover{
+                            font-weight: bold;
+                            color: @color-main;
+                        }
+                    }
+
+                    /*.fc li:first-child a{
+                        color: @color-main;
+                    }*/
 
                     ul{
                         li{
                             span{
-                                border: 1px #F00 solid;
                                 color: @color-white;
                                 font-weight: bold;
                                 line-height: 80px;
-                                float: left;
-                                margin: 0 20px;
+                                //float: left;
+                                //margin: 0 20px;
                                 width: 180px;
                                 height: 100%;
                                 //padding: 0 9px;
@@ -75,22 +87,25 @@ font-size: 0;}
                         }
                     }
 
-                .company{
-                    float: left;
-                }
-                .company li{
+                [class$="bm"]{
                     width: 220px;
-                    }
-                .managementinnovation{
                     float: left;
                 }
-                .portfolio{
-                    float: left;
-                }
-                .sustainabilitymanagement{
-                    float: left;
-                }
+                [class$="bm"] li{
+                    font-size: 14px;
+                    height: 30px;
 
+                    &:before{
+                        content: "";
+                        width: 1px;
+                        height: 170px;
+                        background-color: @color-line;
+                        top: 80px;
+                        position: absolute;
+                        display: block;
+                    }
+
+                } //[class$="bm"] li close
 
 
                 } //mainNavWrap close
