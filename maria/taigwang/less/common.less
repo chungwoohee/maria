@@ -11,6 +11,7 @@
 
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,p{margin: 0; padding: 0;}
 a{text-decoration: none; color: @color-black;}
+i{font-style: normal;}
 ol,ul,li{list-style: none;}
 body{font-family: 'Oswald', sans-serif;
 overflow-x:none;}
@@ -268,7 +269,6 @@ font-size: 0;}
                     height: 55px;
                     display: inline-block;
 
-
                     span{
                         color: #FFF;
                         font-size: 15px;
@@ -276,17 +276,50 @@ font-size: 0;}
 
                     &:hover{
                         border-bottom: 1px #FFF solid;
-                    }
+                        &:first-child{text-decoration: none;}
+                        }
                     }
 
                 }
                 li:first-child{
                     background-color: @color-main;
                 }
-
             }
         } //cover close
     } //subMenu
+
+    .subT{
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        h1{
+            text-align: center;
+            padding: 72px 0;
+        }
+        a{
+        display: block;
+        }
+
+        .prev{
+            left: 0;
+            width: 62px;
+            height: 62px;
+            background: url(http://www.tkgroup.co.kr/kor/_Img/Layout/cont-prev.png);
+            position: absolute; top: 50%; margin-top: -31px;
+        }
+
+        .next{
+            right: 0;
+            width: 62px;
+            height: 62px;
+            background: url(http://www.tkgroup.co.kr/kor/_Img/Layout/cont-next.png);
+            position: absolute; top: 50%; margin-top: -31px;
+        }
+
+    } //subT close
+
+
+
 
 } //subPage
 
@@ -315,7 +348,6 @@ font-size: 0;}
 
         &:hover {
             display: block;
-
         }
     }
 
